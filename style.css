@@ -43,8 +43,9 @@ td{
     font-weight: 400;
     padding: 5px 30px;
     font-size: 14px;
+    text-align: center;
 }
-img{
+td img{
     height: 25px;
 }
 tr:nth-child(2n){
@@ -53,4 +54,55 @@ tr:nth-child(2n){
 tr:nth-child(2n) td{
     border-bottom: 1px solid #E0E0E0;
     border-top: 1px solid #E0E0E0;
+}
+/* Form CSS */
+.form{
+    background-color: #F6F8F8;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.form form{
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+}
+.back_btn{
+    color: #2bc48a;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.back_btn img{
+    height: 16px;
+    margin-right: 5px;
+}
+h2{
+    margin: 10px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.erreur_message{
+    color: red;
+    font-size: 12px;
+}
+label{
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+input{
+    padding: 5px;
+    border: 1px solid #999;
+    outline: none;
+    margin-top: 2px;
+}
+input:focus{
+    border: 1px solid #ffcb61;
+}
+input[type="submit"]{
+    margin-top: 25px;
+    background-color: #2BC48A;
+    border: 1px solid #2BC48A;
+    cursor: pointer;
+    color: #FFF;
+    text-transform: uppercase;
 }
