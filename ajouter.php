@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="form">
-        <a href="index.html" class="back_btn"><img src="images/back.png">Retour</a>
+        <a href="index.php" class="back_btn"><img src="images/back.png">Retour</a>
         <h2>Ajouter un employé</h2>
         <p class="erreur_message">Veuillez remplir tous les champs !</p>
         <form action="" method="POST">
