@@ -20,5 +20,37 @@ body{
     color: #FFF;
     display: flex;
     align-items: center;
-    
+    text-align: 0;
+    border-radius: 6px;
+    text-decoration: 0;
+}
+.btn_add img{
+    margin-right: 5px;
+    height: 20px;
+}
+/* Tableau */
+table {
+    border-collapse: collapse;
+    color: #404040;
+}
+th{
+    font-size: 16px;
+    border-bottom: 3px solid #ffcb61;
+    padding: 5px 20px;
+    font-weight: 500;
+}
+td{
+    font-weight: 400;
+    padding: 5px 30px;
+    font-size: 14px;
+}
+img{
+    height: 25px;
+}
+tr:nth-child(2n){
+    background-color: #F6F8F8;
+}
+tr:nth-child(2n) td{
+    border-bottom: 1px solid #E0E0E0;
+    border-top: 1px solid #E0E0E0;
 }
