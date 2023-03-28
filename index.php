@@ -22,7 +22,7 @@
                 // INCLUDE THE CONNECTION PAGE
                 include_once("connexion.php");
                 // REQUEST TO DISPLAY THE EMPLOYEE LIST
-                $req = mysqli_query($con, "SELECT * FROM Employe");
+                $req = mysqli_query($con, "SELECT * FROM employe");
                 if(mysqli_num_rows($req) == 0){
                     // IF THERE IS NO EMPLOYEE IN THE DATABASEN THEN :
                     echo "Il n'y a pas encore d'employés ajoutés !";
@@ -41,6 +41,8 @@
                         <?php
                     }
                 }
+                // CLOSE THE CONNECTION
+                mysqli_close($con);
             ?>
         </table>
     </div>
