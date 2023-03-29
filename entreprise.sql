@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le : lun. 27 mars 2023 à 19:44
+-- Généré le : mer. 29 mars 2023 à 19:16
 -- Version du serveur :  5.7.34
 -- Version de PHP : 7.4.21
 
@@ -39,7 +39,12 @@ CREATE TABLE `employe` (
 --
 
 INSERT INTO `employe` (`id`, `nom`, `prenom`, `age`) VALUES
-(1, 'Thibaut', 'Milville', 20);
+(1, 'MILENJIC', 'Richard', 60),
+(2, 'WAGNER', 'François', 25),
+(3, 'BERTRAND', 'Alex', 42),
+(4, 'ABDULABABIDACARCALINAM', 'Zakari', 45),
+(5, 'MOMO', 'Gustavo', 34),
+(6, 'KALIS', 'Babar', 23);
 
 --
 -- Index pour les tables déchargées
@@ -59,7 +64,7 @@ ALTER TABLE `employe`
 -- AUTO_INCREMENT pour la table `employe`
 --
 ALTER TABLE `employe`
-  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
