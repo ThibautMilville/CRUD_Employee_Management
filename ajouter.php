@@ -37,7 +37,7 @@
         <h2>Ajouter un employé</h2>
         <p class="erreur_message">
             <?php
-                // IF THE VARIABLE EXIST -> DISPLAY THE ERROR MESSAGE
+                // IF THE VARIABLE EXISTS -> DISPLAY THE ERROR MESSAGE
                 if(isset($message)){
                     echo $message;
                 }
