@@ -28,6 +28,8 @@
                 $prenom = ucwords(strtolower($prenom));
                 // UPDATE QUERY
                 $req = mysqli_query($con, "UPDATE employe SET nom = '$nom', prenom = '$prenom', age = '$age' WHERE id = $id");
+                // CLOSE THE CONNECTION
+                mysqli_close($con);
                 // IF REQUEST SUCCESS -> REDIRECTION TO THE INDEX PAGE
                 if($req){
                     header("location:index.php");
