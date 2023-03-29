@@ -17,6 +17,9 @@
             if(!empty($nom) && !empty($prenom) && !empty($age)){
                 // DATABASE CONNECTION
                 include_once("connexion.php");
+                // UPPERCASE THE NAME AND CAPITALIZE THE FIRST NAME
+                $nom = strtoupper($nom);
+                $prenom = ucwords(strtolower($prenom));
                 // INSERT QUERY
                 $req = mysqli_query($con, "INSERT INTO employe VALUES (NULL, '$nom', '$prenom', '$age')");
                 // CLOSE THE CONNECTION
